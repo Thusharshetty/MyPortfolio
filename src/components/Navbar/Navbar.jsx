@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 z-50 flex w-full justify-center pt-6">
   
-      <nav className="flex h-20 w-[92%] max-w-7xl items-center justify-between rounded-full border border-neutral-200 bg-white/70 px-8 backdrop-blur-xl">
+      <nav className="flex h-22 w-[92%] max-w-7xl items-center justify-between rounded-full border border-neutral-300/50 bg-white/80 px-10 backdrop-blur-xl">
 
         <div className="flex items-center gap-3">
           <div className="flex h-12 w-12 items-center justify-center rounded-xl border text-xl font-bold">

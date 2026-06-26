@@ -19,7 +19,7 @@ export default function Hero() {
             to Scalable
             <br />
             <span className="text-lime-500">
-              Products.
+            Products.
             </span>
           </h1>
           <p className="mt-8 max-w-xl text-lg text-neutral-600">

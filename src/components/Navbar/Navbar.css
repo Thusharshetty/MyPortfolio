@@ -1,0 +1,36 @@
+.navbar{
+    width:90%;
+    margin:auto;
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+.navLinks{
+    display:flex;
+    gap:45px;
+    list-style:none;
+    font-size:17px;
+}
+.navLinks li{
+    cursor:pointer;
+    transition:.3s;
+}
+.navLinks li:hover{
+    color:#86d100;
+}
+.contactBtn{
+    padding:14px 28px;
+    background:#111;
+    color:white;
+    border-radius:999px;
+    transition:.3s;
+}
+.contactBtn:hover{
+    background:#86d100;
+    color:black;
+}

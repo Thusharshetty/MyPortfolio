@@ -12,9 +12,9 @@ const sizes={
     lg:'px-7 py-4 text-base'
 }
 const baseStyles =
-  "inline-flex items-center justify-center rounded-full font-semibold transition-all duration-300 ease-out";
+"inline-flex items-center justify-center rounded-full font-semibold transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2";
 export default function Button({
-    children, href, external=false, variant='primary',size='md' , className=" ",...props
+    children, href, external=false, variant='primary',size='md' , className="",...props
 }){
  const classes = cn(
      baseStyles,

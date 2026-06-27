@@ -1,16 +1,20 @@
 import React from 'react'
 import Button from '@/components/ui/Button'
 import { stats } from '@/data'
+import { motion } from 'framer-motion'
+import { fadeUp,fadeLeft,staggerContainer } from '@/animations/variants'
 
 export default function HeroContent() {
   return (
-    <div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-lime-300 bg-lime-100/60 px-4 py-2 text-sm">
+    <motion.div  variants={staggerContainer}
+    initial="hidden"
+    animate="visible">
+          <motion.div variants={fadeUp} className="inline-flex items-center gap-2 rounded-full border border-lime-300 bg-lime-100/60 px-4 py-2 text-sm">
             <div className="h-2 w-2 rounded-full bg-lime-500"></div>
             Available for Internship
-          </div>
+          </motion.div>
 
-          <h1 className="mt-8 text-5xl md:text-6xl lg:text-7xl leading-tight">
+          <motion.h1 variants={fadeLeft} className="mt-8 text-5xl md:text-6xl lg:text-7xl leading-tight">
             {/* Building Digital */}
             From Ideas
             <br />
@@ -20,8 +24,8 @@ export default function HeroContent() {
             <span className="text-lime-500">
             Products.
             </span>
-          </h1>
-          <p className="mt-8 max-w-xl text-lg text-neutral-600">
+          </motion.h1>
+          <motion.p variants={fadeUp}className="mt-8 max-w-xl text-lg text-neutral-600">
 
             {/* I'm Thushar Shetty, a Full Stack Developer passionate
             about building scalable web applications and solving
@@ -31,16 +35,16 @@ export default function HeroContent() {
             modern web applications
             and solving real-world
             problems.
-          </p>
-          <div className="mt-10 flex gap-4 items-center flex-wrap ">
+          </motion.p>
+          <motion.div variants={fadeUp} className="mt-10 flex gap-4 items-center flex-wrap ">
             <Button size="lg">
               View Projects
             </Button>
             <Button  variant="secondary" size="lg">
                Contact Me
             </Button>
-          </div>
-          <div className="mt-12 flex flex-wrap gap-12">
+          </motion.div>
+          <motion.div variants={fadeUp} className="mt-12 flex flex-wrap gap-12">
             {stats.map((stat,index)=>{
               return(
                 <div key={index}  className="flex flex-col gap-4">
@@ -49,8 +53,8 @@ export default function HeroContent() {
                 </div>
               )
             })}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
   )
 }

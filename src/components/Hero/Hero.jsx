@@ -10,6 +10,7 @@ export default function Hero() {
         <HeroContent/>
         <HeroImage/>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reprehenderit consequuntur ab amet maxime voluptates, tempore quas vero architecto quam ipsa at accusamus alias velit veritatis. Quam sapiente doloremque at.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel nulla esse suscipit molestiae facilis libero eos itaque eaque aperiam tenetur! Velit magni eveniet sed architecto itaque, corporis accusamus voluptatem culpa.
       </div>
 
     </section>

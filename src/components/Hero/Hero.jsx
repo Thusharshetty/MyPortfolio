@@ -11,7 +11,7 @@ export default function Hero() {
         <HeroImage/>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reprehenderit consequuntur ab amet maxime voluptates, tempore quas vero architecto quam ipsa at accusamus alias velit veritatis. Quam sapiente doloremque at.
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque qui cum accusamus nam exercitationem. Quae debitis, tempora, corporis molestias omnis obcaecati minima numquam praesentium sunt, voluptate laudantium cupiditate nostrum amet?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugiat id cumque veniam error excepturi sed earum, voluptatum architecto dolores rerum blanditiis provident cum tempore facilis velit tempora molestias dolore!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugiat id cumque veniam error excepturi sed earum, voluptatum architecto dolores rerum blanditiis provident cum tempore facilis velit tempora molestias dolore!..
       </div>
 
     </section>

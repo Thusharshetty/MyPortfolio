@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+
 
 const variants={
     primary:'bg-[var(--accent)] text-[var(--text)] hover:-translate-y-1 hover:shadow-lg',
@@ -15,7 +17,7 @@ const baseStyles =
 "inline-flex items-center justify-center rounded-full font-semibold transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2";
 
 export default function Button({
-    children, href, external=false, variant='primary',size='md' , className="",...props
+    children,icon, href, external=false, variant='primary',size='md' , className="",...props
 }){
  const classes = cn(
      baseStyles,
@@ -34,15 +36,28 @@ if(href){
             className={classes}
             >
                 {children}
+                {icon &&  <motion.span
+                whileHover={{x:4}}
+                transition={{duration:0.2}}
+                >{icon}</motion.span>}
             </a>
         );
     }
     return(
-        <Link href={href} className={classes}>{children}</Link>
+        <Link href={href} className={classes}>{children}
+        {icon &&  <motion.span
+                whileHover={{x:4}}
+                transition={{duration:0.2}}
+                >{icon}</motion.span>}
+        </Link>
     );
 }
 return(
-    <button className={classes} {...props}>{children}</button>
+    <button className={classes} {...props}>{children}
+    {icon &&  <motion.span
+                whileHover={{x:4}}
+                transition={{duration:0.2}}
+                >{icon}</motion.span>}
+    </button>
 )
-
 }

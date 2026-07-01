@@ -3,6 +3,7 @@ import Button from '@/components/ui/Button'
 import { stats } from '@/data'
 import { motion } from 'framer-motion'
 import { fadeUp,fadeLeft,staggerContainer } from '@/animations/variants'
+import { ArrowRight } from "lucide-react";
 
 export default function HeroContent() {
   return (
@@ -37,10 +38,10 @@ export default function HeroContent() {
             problems.
           </motion.p>
           <motion.div variants={fadeUp} className="mt-10 flex gap-4 items-center flex-wrap ">
-            <Button size="lg">
+            <Button size="lg"  icon={<ArrowRight size={18} />}>
               View Projects
             </Button>
-            <Button  variant="secondary" size="lg">
+            <Button  variant="secondary" size="lg" icon={<ArrowRight size={18} />}>
                Contact Me
             </Button>
           </motion.div>
